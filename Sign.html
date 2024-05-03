@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+           margin: 0px;
+           background-image: url("log images/pexels-james-wheeler-414612.jpg");
+           background-repeat: no-repeat;
+           background-size: 100%;
+        }
+    
+
+      
+
+        .login-container {
+    padding: 20px;
+    border-radius: 12px;
+    width: 450px;
+    text-align: center;
+    height: 550px;
+    margin-top: 60px;
+    position: relative;
+    left: 556px;
+        }
+
+        .login-container input {
+            margin: 25px 0;
+            width: 70%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: none;
+        
+        }
+
+        .login-container button {
+            background-color: #ff4081;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            width: 65px;
+            box-sizing: border-box;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 1680px;padding:20px;" class="container">
+        <ul class="navv">
+            <img href="index.html" class="logo" src="logo.png">
+            <li class="lika" id="spec">Traveller</li>
+            <li class="lika" ><a class="ref" href="index.html">Home</a></li>
+            <li class="lika" ><a class="ref" href="tour.html">Tours</a></li>
+            <li class="lika" ><a class="ref" href="de.html">Destinations</a></li>
+            <li class="lika" ><a class="ref" href="act.html">Activity</a></li>
+            <li class="lika" ><a class="ref" href="">Review</a></li>
+            <li class="lika-cart"><a href="cart.html"><img src="cart.png" alt=""></a></li>
+            <li class="drop"><button onclick="window.location.href='loginn.html'" class="lika-sign">Login</button></li>
+            <li class="drop"><button onclick="window.location.href='Sign.html'" class="lika-log">SignIn</button></li>
+        </ul>
+    </div>
+
+    <div class="login-container">
+        <h2 style="color: white;border:black;font-size:38px;">SignUp Form</h2>
+        <form action="process_login.php" id="loginForm" method="post">
+            <input type="text" name="firstname" placeholder="First Name" required>
+            <br>
+            <input type="text" name="lastname" placeholder="Last Name" required>
+            <br>
+            <input type="tel" name="phonenumber" placeholder="Phone Number" required>
+            <br>
+            <input type="email" name="email" placeholder="Email" required>
+            <br>
+            <input type="password" name="password" placeholder="Password" required>
+            <br>
+            <button type="button" onclick="submitForm()">SignUp</button>
+        </form>
+    </div>
+    <div id="footer" style="width: 1650px;background:linear-gradient(#0e0a5d,transparent);" class="footer">
+        <div class="trip"><p style="    font-size: 17px;
+            color: white;
+            line-height: 30px;">There are many variations of passages of <br>Lorem the Ipsum available but it is the majority of suffered <br>that a alteration in that some dummy text.</p></div>
+        <div class="support">
+            <h3 style="position: relative;
+            left: 24px;font-weight:bold;color:white
+        ">Support</h3><li>Customer Support</li>
+        <li>Privacy & Policy</li>
+        <li>Contact Channels</li></div>
+        <div class="about"><h3 style="    position: relative;
+            left: 23px;font-weight:bold;color:white">About</h3><li>Our Story</li>
+        <li>Travel With Us</li>
+        <li>Travel Tips</li>
+        <li>Be Our Partner</li></div>
+        <div class="contact"><h3 style="    position: relative;
+            left: 29px;font-weight:bold;color:white">Contact</h3><li><p>455 West Orchard Street <br>Kings Mountain, NC 280867</p></li>
+        <li><img style="position: relative;top:8px;" src="footer img/icons8-phone-24.png" alt="">+088 (006) 992-99-10</li>
+        <li><img style="    position: relative;
+            top: 13px;
+            width: 33px;
+        " src="footer img/icons8-mail-24.png" alt="">example@gmail.com</li></div>
+        <div class="soc">
+            <li><img src="footer img/icons8-instagram-50.png" alt=""></li>
+            <li><img src="footer img/icons8-pinterest-50.png" alt=""></li>
+            <li><img src="footer img/icons8-twitter-50 (1).png" alt=""></li>
+            <li><img src="footer img/icons8-facebook-50.png" alt=""></li>
+        </div>
+        <div class="fot">
+            <li style="position: relative;right:734px;">© 2023 Ovatheme All Rights Reserved.</li>
+            <li><img src="footer img/icons8-american-express-48.png" alt=""></li>
+            <li><img src="footer img/icons8-jcb-48.png" alt=""></li>
+            <li><img src="footer img/icons8-mastercard-logo-60.png" alt=""></li>
+            <li><img src="footer img/icons8-visa-48.png" alt=""></li>
+        </div>
+</div>
+
+    <script>
+        function submitForm() {
+            // Get form data
+            var form = document.getElementById("loginForm");
+            var formData = new FormData(form);
+
+            // Check if all required fields are filled
+            var isValid = true;
+            form.querySelectorAll("[required]").forEach(function (input) {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    alert("Please fill in all required fields.");
+                    return;
+                }
+            });
+
+            if (isValid) {
+                // If all fields are filled, submit the form
+                submitForm(formData);
+            }
+          
+        }
+       
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head style="max-width: 1700vh;">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="index.js"></script>
+    <script src="slide.js"></script>
+    <script src="review.js"></script>
+  <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="content.js"></script>
+    <script>
+      
+        flatpickr("#tour_date", {
+            enableTime: false, 
+            dateFormat: "Y-m-d", 
+        });
+       
+        function addToCart(placeName) {
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push(placeName);
+            updateCartIcon();
+
+            alert(`${placeName} added to the cart!`);
+            localStorage.setItem('cart', JSON.stringify(cart));
+        }
+        function updateCartIcon() {
+            
+            console.log('Cart updated');
+        } 
+       
+          
+    </script>
+
+    <style>
+        .cart-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #e41b5a;
+            color: white;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
+        
+
+        
+    </style>
+   
+</head>
+<body style="margin: 0px;">
+    
+    <div style="width: 1660px;background-color:white;padding:10px;" class="container">
+        <ul class="navv">
+            <img href="index.html" class="logo" src="home img/logo.png">
+            <li class="lika" id="spec">Traveller</li>
+            <li class="lika"><a class="ref" href="index.html">Home</a></li>
+            <li class="lika"><a class="ref" href="tour.html">Tours</a></li>
+            <li class="lika"><a class="ref" href="de.html">Destinations</a></li>
+            <li class="lika"><a class="ref" href="#container-6">About Us</a></li>
+            <li class="lika"><a class="ref" href="#container-10">Review</a></li>
+            <li class="lika"><a class="ref" href="#footer">Contact us</a></li>
+            <li class="lika-cart"><a href="cart.html"><img src="home img/cart.png" alt=""></a></li>
+            <li class="drop"><button onclick="window.location.href='loginn.html'" class="lika-sign">Login</button></li>
+            <li class="drop"><button onclick="window.location.href='Sign.html'" class="lika-log">SignIn</button></li>
+        </ul>
+    </div>
+    
+    <div  class="container-2">
+        <div style="width: 1680px;" class="container-3">
+        <img src="home img/pexels-aleksandar-pasaric-1285625.jpg" alt="" class="slide" >
+        <img src="home img/pexels-asad-photo-maldives-1268855.jpg" alt="" class="slide">
+        <img src="home img/pexels-maahid-photos-3881104.jpg" alt="" class="slide">
+        </div>
+        <form id="searchForm" action="check_availability.php" method="post">
+            <div class="overlay-1">
+                <li class="u">
+        <img src="home img/dest1.jpg" class="dest">
+        <h1 class="h33">Destination</h1>
+        <select class="user" name="destination" size="3" required>
+            <option value="">Select destination</option>
+            <option value="Paris">Paris</option>
+            <option value="London">London</option>
+            <option value="New York">New York</option>
+            <option value="Tokyo">Tokyo</option>
+            <option value="Sydney">Sydney</option>
+        </select>
+    </li>
+
+    <li class="u">
+        <img src="home img/acti.png" class="dest">
+        <h1 class="h33">Activities</h1>
+        <div class="dr">
+            <select class="user" name="destination" size="3" required>
+                <option value="" >Select destination</option>
+                <option value="CityTour">CityTour</option>
+                <option value="Beaches">Beaches</option>
+                <option value="Hiking">Hiking</option>
+                <option value="Sighting">SightSeeing</option>
+                <option value="Culture">BungeeJumping</option>
+            </select>
+        </div>
+    </li>
+
+    <li class="u">
+        <img src="home img/person.png" class="dest">
+        <h1 class="h33">Person</h1>
+        <div class="dr">
+            <input class="user" type="text" name="person" placeholder="Person">
+        </div>
+    </li>
+                <li class="u">
+                    <img src="home img/date.png" class="dest">
+                    <h1 class="h33">Date</h1>
+                    <input style="  position: relative;
+                    bottom: 38px;
+                    right: 42px;
+                    width: 120px;
+                    border: none;
+                " type="text" id="tour_date" name="tour_date" required>
+                </li>
+                <li class="u">
+                    <button type="submit" class="but" style="color:white;">Search</button>
+
+                </li>
+            </div>
+        </form>
+        
+
+    <div style="width:1670px;background-color:rgb(253, 44, 117);"  class="container-4">
+        <li><img src="cont4img/icons8-airplane-50.png" alt=""><h2>500+ Destinations</h2></li>
+        <li><img src="cont4img/icons8-clock-64.png" alt=""><h2>Best Price Guarantee</h2></li>
+        <li><img src="cont4img/icons8-palm-tree-64.png" alt=""><h2>Top Notch Support</h2></li>
+    </div>
+
+    <div style="width:1670px;background-color:rgb(5, 5, 40)" class="container-5">
+        <h1 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif">Popular Destinations</h1>
+        <h2 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif">Unmissable Places You Can't Afford to Skip!</h2>
+        <div class="slider">
+            <div class="card-container">
+                <div  class="box-1"><div class="front"><img class="toslide" src="images/kyoto.jpg" alt=""><h3>Kyoto,Japan</h3> <button class="cart-btn" onclick="addToCart('Kyoto')">Cart</button></div><div class="back">Hi</div></div>
+                <div class="box-1"><img class="toslide" src="images/burma.jpg" alt=""><h3>Burma</h3> <button class="cart-btn" onclick="addToCart('Burma')">Cart</button></div>
+                <div class="box-1"><img class="toslide" style="width: 311px; position: relative;right: 23px;" src="images/Capodica.jpg" alt=""><h3>Capodica</h3> <button class="cart-btn" onclick="addToCart('Capodica')">Cart</button></div>
+                <div class="box-1"><img class="toslide" style="width:311px;position:relative;right:13px;" src="images/BanfPark.jpg" alt=""><h3>BanfPark,Canada</h3> <button class="cart-btn" onclick="addToCart('BanfPark')">Cart</button></div>
+                <div class="box-1"><img class="toslide" src="images/MuCangChai.jpg" alt=""><h3>MuCangChai</h3> <button class="cart-btn" onclick="addToCart('MuCangChai')">Cart</button></div>
+            </div>
+            <div class="card-container">
+                <div class="box-1"><img class="toslide" style="width:311px;position:relative;right:13px;" src="images/Cave Waitamo.jpg" alt=""><h3 style="position:relative;left: 1px;">Cave Waitamo,NewZealand</h3> <button class="cart-btn" onclick="addToCart('Cave Waitamo')">Cart</button></div>
+                <div class="box-1"><img style="width:311px;position:relative;right:13px;" src="images/finland.jpg" alt=""><h3>Finland</h3> <button class="cart-btn" onclick="addToCart('Finland')">Cart</button></div>
+                <div class="box-1"><img class="toslide" src="images/HawaMahal.jpg" alt=""><h3 style="position:relative;left: 1px;">HawaMahal,Jaipur</h3><button class="cart-btn" onclick="addToCart('HawaMahal')">Cart</button></div>
+                <div class="box-1"><img class="toslide"  src="images/Keukenhof.jpg" alt=""><h3 style="position:relative;left: 1px;">Keukenhof Gardens</h3><button class="cart-btn" onclick="addToCart('Keukenhof')">Cart</button></div>
+                <div class="box-1"><img class="toslide" src="images/Niagara-Falls.jpg" alt=""><h3 style="position:relative;left: 1px;">Niagara Falls,NewYork</h3><button class="cart-btn" onclick="addToCart('Niagara-Falls')">Cart</button></div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+    <div id="container-6"  style="background: linear-gradient(45deg, #8be0cd, transparent);width:1670px;"  class="container-6">
+        <!-- Content for container-6 -->
+         
+        <img style=" position: relative;
+        top: 63px;left:54px;" src="dial.png" alt="">
+        <h3 style="color: darkblue;
+        position: relatibve;
+        position: relative;
+        top: 53px;
+        left: 64px;
+        font-style: italic;">Take A Tour</h3>
+        <h2 style="position: relative;
+        top: 53px;
+        left:24px;
+        font-style: italic;">Discover Our Travel
+            Guideline</h2>
+            <li style="margin: 10px;
+            line-height: 38px;list-style:none;">
+          <p style="    font-size: 19px;
+          position: relative;
+          top: 73px;">Explore the World with Us
+
+            At Traveller, we're passionate about travel.<br> Our journey began with a simple idea: to make the world's wonders accessible to everyone.<br> From pristine beaches to captivating cultural experiences,<br> we curate unforgettable adventures that leave you with a lifetime of memories.
+            
+            <br>Who We Are<br>
+            
+            We're more than just a travel agency.<br> We're your passport to discovery, your ticket to the extraordinary, and your trusted partner in crafting dream vacations.<br> Our team of experts lives and breathes travel, and we're dedicated to ensuring your journey is seamless, inspiring, and truly yours.</p>
+            </li>
+            
+        <img style="position: relative;
+        border-radius: 594px;
+        height: 563px;
+        bottom: 343px;
+        width: 285px;
+        left: 1323px;
+        border: solid 10px white;
+    " src="cont4img/anse-source-dargent-beach-royalty-free-image-1570204897.jpg" alt="">
+        <img style="position: relative;
+        height: 438px;
+        left: 805px;
+        width: 285px;
+        border-radius: 595px;
+        bottom: 323px;
+        border: solid 9px white;" src="cont4img/most-beautiful-places-inn-the-world-red-fishing-house-village-among-the-snow-with-royalty-free-image-1124981967-1553623861.jpg" alt="">
+        </div>
+    </div>
+
+
+    <div style="width:1670px;background-color:rgb(42, 105, 159);" class="container-7">
+        <img style="position: relative;
+        height: 334px;
+        width: 994px;
+        top: 60px;
+        left: 94px;
+    " src="cont4img/istockphoto-1248542684-612x612.jpg" alt="">
+    <img style="    height: 234px;
+    position: relative;
+    right: 910px;" src="cont4img/people-bg-mc4wp-form.png" alt="">
+    <h1 style="position: relative;
+    color: white;
+    left: 645px;
+    bottom: 204px;
+">Subscribe Newsletter $ <br>Get Company News.</h1>
+    <div class="bus">
+        <p style="position: relative;
+        top: 12px;
+        left: 33px;
+        color: grey;
+    ">enter ur email</p>
+    <button style="height: 28px;
+    width: 135px;
+    border-radius: 8px;
+    position: relatibe;
+    position: relative;
+    left: 214px;
+    bottom: 26px;
+    border: solid 1px white;
+    background-color: #fd4c5c;"><h3 style="color: white;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;">Subscribe Now</h3></button>
+    </div>
+    </div>
+    
+    <div style="width:1670px;background:linear-gradient(black,#ee1fd1);" class="container-16">
+       
+        <div class="scroll"><img src="counter/icons8-user.gif" alt=""><h3>Users<h3></div>
+        <div class="scroll1"><img src="counter/icons8-location.gif" alt=""><h3>Tours</h3></div>
+        <div class="scroll2"><img src="counter/icons8-thumbs-up.gif" alt=""><h3>Likes</h3></div>
+        <div class="scroll3"><img src="counter/icons8-star.gif" alt=""><h3>Stars</h3></div>
+        </div>
+
+
+    <div id="container-10" style="width:1650px;background:linear-gradient(to right, #6edade, #ee1fd1);" class="container-10">
+        <h3 style="position: relative;
+        top: 67px;
+        color:white;
+        font-size:23px;
+    ">What our Happy Clients Say!!</h3>
+        <div class="slider">
+            <div class="card">
+                <div class="content"><p>A traveler's paradise! This tourist website offers a passport to adventure.<br> From exotic destinations to hassle-free planning, <br>it's the ultimate journey companion</p><h3>Aakash</h3><h4>Designer</h4><img src="review-img/free-photo-of-a-pretty-woman-wearing-green-dress.jpeg" alt=""></div>
+                <div class="content"><p>Unforgettable experiences await!<br>Thanks to this tourist website, we explored hidden gems and embraced new cultures.<br> A treasure trove of wanderlust!</p><h3>Sanjana</h3><h4>Freelancer</h4><img src="review-img/pexels-photo-2829373.jpeg" alt=""></div>
+                <div class="content"><p>The perfect travel buddy! <br>This tourist website's user-friendly interface and expert tips turned our <br>vacation into a seamless and joyous adventure.</p><h3>Shakti</h3><h4>Graphic Designer</h4><img src="review-img/pexels-photo-7580821.webp" alt=""></div>
+                <div class="content"><p>Adventure begins here! <br>The tourist website's handpicked itineraries ensured we made the most of our trip.<br> It's like having a personal tour guide in your pocket.</p><h3>Vaishnavi</h3><h4>Software Developer</h4><img src="review-img/pexels-photo-7686311.jpeg" alt=""></div>
+                <div class="content"><p>Effortless exploration! With this tourist website,<br>we uncovered enchanting destinations, experienced local culture, and left no stone unturned.<br> A must for globetrotters!</p><h3>Sakshma</h3><h4>Data Analyst</h4><img src="review-img/pexels-photo-10495825.jpeg" alt=""></div>
+            </div>
+            <div class="card">
+                <div class="content"><p>A dream come true!<br> This website made our bucket list a reality.<br> Impeccable service, breathtaking views, and unforgettable memories</p><h3>Arjun</h3><h4>Cloud Architect</h4><img src="review-img/pexels-photo-11438543.jpeg" alt=""></div>
+                <div class="content"><p>Infinite possibilities! This tourist website's diverse travel options suit every taste.<br> Our journey was an enchanting kaleidoscope of experiences</p><h3>Avantika</h3><h4>Data Scientist</h4><img src="review-img/pexels-photo-11941373.jpeg" alt=""></div>
+                <div class="content"><p>"Discover the world with ease! <br>This website simplified our travel plans, connecting us to remarkable destinations.<br> The gateway to wanderlust</p><h3>Arun</h3><h4>Writer</h4><img src="review-img/pexels-photo-12376514.jpeg" alt=""></div>
+                <div class="content"><p>Adventure without limits! From solo wanderers to family explorers,<br> this tourist website caters to all. <br>No matter your dream destination, it has you covered.</p><h3>Akshaya</h3><h4>Artist</h4><img src="review-img/pexels-photo-12430081.jpeg" alt=""></div>
+                <div class="content"><p>Escape the ordinary!<br> This website turns travel fantasies into reality.<br> Flawless organization and exceptional service made our trips extraordinary!</p><h3>Zoya</h3><h4>Auditor</h4><img src="review-img/pexels-photo-13203566.webp" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="width: 1650px;background:linear-gradient(#0e0a5d,transparent);" class="footer">
+        <div class="trip"><p style="    font-size: 17px;
+            color: white;
+            line-height: 30px;">There are many variations of passages of <br>Lorem the Ipsum available but it is the majority of suffered <br>that a alteration in that some dummy text.</p></div>
+        <div class="support">
+            <h3 style="position: relative;
+            left: 24px;font-weight:bold;color:white
+        ">Support</h3><li>Customer Support</li>
+        <li>Privacy & Policy</li>
+        <li>Contact Channels</li></div>
+        <div class="about"><h3 style="position: relative;
+            left: 23px;font-weight:bold;color:white">About</h3><li>Our Story</li>
+        <li>Travel With Us</li>
+        <li>Travel Tips</li>
+        <li>Be Our Partner</li></div>
+        <div class="contact"><h3 style="    position: relative;
+            left: 29px;font-weight:bold;color:white">Contact</h3><li><p>455 West Orchard Street <br>Kings Mountain, NC 280867</p></li>
+        <li><img style="position: relative;top:8px;" src="footer img/icons8-phone-24.png" alt="">+088 (006) 992-99-10</li>
+        <li><img style="    position: relative;
+            top: 13px;
+            width: 33px;
+        " src="footer img/icons8-mail-24.png" alt="">example@gmail.com</li></div>
+        <div class="soc">
+            <li><img src="footer img/icons8-instagram-50.png" alt=""></li>
+            <li><img src="footer img/icons8-pinterest-50.png" alt=""></li>
+            <li><img src="footer img/icons8-twitter-50 (1).png" alt=""></li>
+            <li><img src="footer img/icons8-facebook-50.png" alt=""></li>
+        </div>
+        <div class="fot">
+            <li style="position: relative;right:734px;">© 2023 Ovatheme All Rights Reserved.</li>
+            <li><img src="footer img/icons8-american-express-48.png" alt=""></li>
+            <li><img src="footer img/icons8-jcb-48.png" alt=""></li>
+            <li><img src="footer img/icons8-mastercard-logo-60.png" alt=""></li>
+            <li><img src="footer img/icons8-visa-48.png" alt=""></li>
+        </div>
+
+    </div>
+  
+</body>
+</html> 

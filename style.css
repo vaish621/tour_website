@@ -1,0 +1,303 @@
+body{
+    margin: 0px;
+      
+}
+
+
+.lika{
+
+    list-style: none;
+    padding: 14px;
+    text-align: center;
+    position: relative;
+    left: 254px;
+    margin: 15px;
+    bottom: 17px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+#spec{
+    font-weight: bold;
+    position: relative;
+    left: -40px;
+    font-size: 22px;
+
+}
+.u{
+    list-style: none;
+    padding-left: 2px;
+    position: relative;
+    color: navy;
+    font-size: 2px;
+    font-family: cursive;
+    left: 61px;
+}
+
+.but{
+    position: relative;
+    top: 9px;
+    background-color: hotpink;
+    border: none;
+    height: 34px;
+    width: 86px;
+    border-radius: 25px;
+}
+
+.navv{
+    display: flex;
+    list-style: none;
+}
+.lika-img{
+    list-style: none;
+}
+.lika-sign{
+    height: 25px;
+    width: 59px;
+    border-style: none;
+    background: cadetblue;
+    border-radius: 5px;
+    color: white;
+}
+.lika-log{
+    height: 25px;
+    width: 59px;
+    border-style: none;
+    background: cadetblue;
+    border-radius: 5px;
+    color: white;
+}
+
+.drop{
+    padding: 20px;
+    position: relative;
+    left: 435px;
+}
+.container{height: 74px;width: 1650px;background-color: aliceblue;}
+.lika-cart{
+    position: relative;
+    left: 395px;
+    top: 14px;
+}
+
+.slide{
+    height: 666px;
+    width: 1773px;
+    object-fit: cover;
+    transition: transform 10s ease; /* Animation duration and easing */
+}
+
+.overlay-1{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    background: white;
+    padding: 10px;
+    height: 55px;
+    width: 1383px;
+}
+.user{
+    list-style: none;
+    display: flex;
+    margin: 90px;
+    position: relative;
+    bottom: 118px;
+    right: 92px;
+    appearance: none;
+    border: none;
+    background: white;
+}
+
+.dest{
+    height: 33px;
+    position: relative;
+    top: 5px;
+    right: 36px;
+}
+
+.h33{
+    position: relative;
+    bottom: 35px;
+    font-size: 17px;
+}
+.container-3 {
+    width: 1650px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo{
+    position: relative;
+    right: 23px;
+    height: 43px;
+
+}
+
+.container-3:hover .slide {
+    transform: scale(1.2);
+}
+
+.container-4{
+    padding: 33px;
+    height: 105px;
+    width: 1650px;
+    background-color: rgb(253, 44, 117);
+    display: flex;
+    list-style: none;
+    left: 1px;
+}
+.container-4 li h2{
+    margin: 150px;
+    position: relative;
+    bottom: 174px;
+    right: 93px;
+    color: white;
+    
+}
+.container-4 li img{
+    position: relative;
+    top: 29px;
+    right: 1px;
+}
+
+
+.container-5 {
+    padding: 33px;
+    height: 455px;
+    width: 1650px;
+    background-color: rgb(5, 5, 40);
+    overflow: hidden;
+    white-space: nowrap; /* Prevent content from wrapping and exceeding container width */
+}
+
+.slider {
+    display: flex;
+    animation: slide 40s linear infinite; /* Increase the animation duration to slow down the slide */
+}
+
+.card-container {
+    width: 1900px;
+    height: 300px;
+    display: flex;
+
+}
+
+.box-1 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    margin: 13px;
+    border-radius: 45px;
+    background-color: rgb(5, 5, 40);
+    top: 30px;
+    
+   
+}
+.card-container img{
+    height: 300px;
+    width: 300px;
+    position:relative;
+    border-radius: 45px;
+    right: 11px;
+    bottom: 12px;
+   
+}
+
+.card-container h3{
+    position: relative;
+    font-size: 25px;
+    bottom: 113px;
+    color: white;
+    left: 73px;
+
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-900px); /* Move to the position of the second card set */
+    }
+    
+    50% {
+        transform: translateX(-1800px); /* Move to the position of the first card set */
+    }
+    75% {
+        transform: translateX(-2700px); /* Move to the position of the second card set */
+    }
+    100% {
+        transform: translateX(-3600px); /* Move to the position of the first card set */
+    }
+}
+
+
+.container-6{
+    height: 756px;
+    width: 1750px;
+
+}
+.container-7{
+    height: 456px;
+    width: 1750px;
+    background-color: rgb(42, 105, 159);
+}
+.bus{
+    height: 49px;
+    width: 423px;
+    position: relative;
+    background-color: #ffffff;
+    left: 590px;
+    bottom: 183px;
+    border-radius: 7px;
+    content: "enter ur email";
+}
+
+:root {
+    --num: 0;
+  }
+  
+  .counter {
+    transition: --num 5s;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+  }
+  
+  .count {
+    font-size: 36px;
+    color: #0073e6;
+    animation: count-up 5s ease-out forwards;
+  }
+  
+ 
+  
+  p {
+    font-size: 14px;
+    color: ;
+    line-height: 30px;
+  }
+  .bg{
+    background-color: #1e1f26;
+    height: 100vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .level{
+    background-color: #00d1b2;
+    padding: 5rem 0;
+    color: #ffffff;
+    margin: 0!important;
+  }
+  
+  .title{
+    color: inherit;
+    width: 200px;
+    height: 36px;
+  }
+
+  

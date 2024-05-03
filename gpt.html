@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        /* Style for the container */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Style for the buttons */
+        button {
+            background-color: #0074D9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Increment and Decrement Counter</h1>
+    <div class="container">
+        <button onclick="increment()">+</button>
+        <h2 id="counting">0</h2>
+        <button onclick="decrement()">-</button>
+    </div>
+
+    <script>
+        let count = 0; // Initial count value
+
+        // Function to increment the counter
+        function increment() {
+            if (count < 100) {
+                count++;
+                document.getElementById("counting").textContent = count;
+            }
+        }
+
+        // Function to decrement the counter
+        function decrement() {
+            if (count > 0) {
+                count--;
+                document.getElementById("counting").textContent = count;
+            }
+        }
+    </script>
+</body>
+</html>

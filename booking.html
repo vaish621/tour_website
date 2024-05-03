@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showConfirmation() {
+            // You can perform any additional validation here before showing the confirmation
+            // For now, let's just show the confirmation alert
+            alert("Booking successfully done!");
+            return true; // Returning true allows the form to be submitted, false would prevent submission
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("log images/pexels-oleksandr-p-1008155.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .form-container {
+            width: 50%;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+
+        }
+
+        .form-container label {
+            display: block;
+    margin: 10px 0;
+    color: white;
+    font-size: 18px;
+        }
+
+        .form-container input,
+        .form-container select {
+            width: 40%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: none;
+
+        }
+
+        .form-container button {
+            background-color: #e70f49;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            top: 74px;
+            right: 137px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 1660px;background-color:white;padding:10px;" class="container">
+        <ul class="navv">
+            <img href="index.html" class="logo" src="logo.png">
+            <li class="lika" id="spec">Traveller</li>
+            <li class="lika" ><a class="ref" href="index.html">Home</a></li>
+            <li class="lika" ><a class="ref" href="tour.html">Tours</a></li>
+            <li class="lika" ><a class="ref" href="de.html">Destinations</a></li>
+            <li class="lika" ><a class="ref" href="act.html">Activity</a></li>
+            <li class="lika" ><a class="ref" href="">Review</a></li>
+            <li class="lika-cart"><a href="cart.html"><img src="cart.png" alt=""></a></li>
+            <li class="drop"><button onclick="window.location.href='loginn.html'" class="lika-sign">Login</button></li>
+            <li class="drop"><button onclick="window.location.href='Sign.html'" class="lika-log">SignIn</button></li>
+        </ul>
+    </div>
+
+    <div class="form-container">
+        <h2 style="color: white;
+        font-size: 44px;">Booking Form</h2>
+        <form>
+            <label for="checkInDate">Check-In Date:</label>
+            <input type="date" id="checkInDate" name="checkInDate" required>
+
+            <label for="checkOutDate">Check-Out Date:</label>
+            <input type="date" id="checkOutDate" name="checkOutDate" required>
+
+            <label for="numGuests">Number of Guests:</label>
+            <input type="number" id="numGuests" name="numGuests" required>
+
+            <label for="package">Select Package:</label>
+            <select id="package" name="package">
+                <option value="10"> $10</option>
+                <option value="15"> $15</option>
+                <option value="20"> $20</option>
+            </select>
+
+            <label for="tourGuide">Tour Guide:</label>
+            <select id="tourGuide" name="tourGuide">
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+            </select>
+
+            <label  for="quantity">Quantity:</label>
+            <input style="position: relative;
+            left: 74px;" type="number" id="quantity" name="quantity" required>
+
+            <button onclick="showConfirmation()" type="submit">Proceed to Pay</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .pa{
+            height: 42px;
+            width: 99px;
+            background-color: #e70f49;
+            position: relative;
+            border: none;
+            left: 48px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .map {
+            width: 100%;
+            max-width: 1670px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .map img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body style="margin: 0px;">
+    <form action="booking.html">
+    <div style="width: 1660px;background-color:white;padding:10px;" class="container">
+        <ul class="navv">
+            <img href="index.html" class="logo" src="logo.png">
+            <li class="lika" id="spec">Traveller</li>
+            <li class="lika" ><a class="ref" href="index.html">Home</a></li>
+            <li class="lika" ><a class="ref" href="tour.html">Tours</a></li>
+            <li class="lika" ><a class="ref" href="de.html">Destinations</a></li>
+            <li class="lika" ><a class="ref" href="act.html">Activity</a></li>
+            <li class="lika" ><a class="ref" href="">Review</a></li>
+            <li class="lika-cart"><a href="cart.html"><img src="cart.png" alt=""></a></li>
+            <li class="drop"><button onclick="window.location.href='loginn.html'" class="lika-sign">Login</button></li>
+            <li class="drop"><button onclick="window.location.href='Sign.html'" class="lika-log">SignIn</button></li>
+        </ul>
+    </div>
+    <h3 style="position: relative;
+    left: 456px;
+    font-size: 34px;
+    color: #0e0a5d;">Forbidden City - China</h3>
+
+    <div style="width:1670px;background: linear-gradient(45deg, #e1ebed, transparent);position:relative;top:12px;height:560px" class="container-5">
+        <h1 style="color: #975a5a;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    ">Take a look!!</h1>
+        <div class="slider">
+            <div class="card-container">
+                <div  style="height: 400px;width:400px;" class="box-1"><img style="height: 400px;width:400px;"  class="toslide" src="china img/free-photo-of-a-pagoda-with-orange-and-green-decorations.jpeg" alt=""> <button class="cart-btn" onclick="addToCart('Kyoto')"></button></div>
+                <div style="height: 400px;width:400px;" class="box-1"><img style="height: 400px;width:400px;"  class="toslide" src="china img/free-photo-of-hall-of-supreme-harmony-in-forbidden-city.jpeg" alt=""> <button class="cart-btn" onclick="addToCart('Burma')"></button></div>
+                <div style="height: 400px;width:400px;" class="box-1"><img style="height: 400px;width:400px;"  class="toslide" style="width: 311px; position: relative;right: 23px;" src="china img/pexels-photo-2481670.jpeg" alt=""> <button class="cart-btn" onclick="addToCart('Capodica')"></button></div>
+                <div style="height: 400px;width:400px;" class="box-1"><img style="height: 400px;width:400px;"  class="toslide" style="width:311px;position:relative;right:13px;" src="china img/pexels-photo-6206422.jpeg" alt=""><h3><button class="cart-btn" onclick="addToCart('BanfPark')"></button></div>
+                <div style="height: 400px;width:400px;" class="box-1"><img style="height: 400px;width:400px;"  class="toslide" src="china img/pexels-photo-9373300.jpeg" alt=""> <button class="cart-btn" onclick="addToCart('MuCangChai')"></button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ov">
+        <h3 style="font-size: 36px;
+        color: #012442;
+        position:relative;
+        left:44px;
+    ">Overview</h3>
+        <p style="font-size: 19px;
+        line-height: 50px;
+        color: #64138c;position:relative;left:44px">The Forbidden City, also known as the Palace Museum, is a large palace complex in Beijing, China. It served as the imperial palace for Chinese emperors for almost 500 years, from the Ming Dynasty (1368–1644) to the end of the Qing Dynasty (1644–1912). The construction of the Forbidden City began in 1406 and was completed in 1420.</p>
+            <div style="position: relative;left:234px" class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13818322.328049646!2d87.6938108409639!3d35.861660822046546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d9b38e3b60eb1%3A0x112c8b23b0743d39!2sChina!5e0!3m2!1sen!2sus!4v1670565166214!5m2!1sen!2sus"
+                    width="600"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+    <button class="pa">Book Now</button>
+    </div>
+    </form>
+    <div id="footer" style="width: 1650px;background:linear-gradient(#0e0a5d,transparent);" class="footer">
+        <div class="trip"><p style="    font-size: 17px;
+            color: white;
+            line-height: 30px;">There are many variations of passages of <br>Lorem the Ipsum available but it is the majority of suffered <br>that a alteration in that some dummy text.</p></div>
+        <div class="support">
+            <h3 style="position: relative;
+            left: 24px;font-weight:bold;color:white
+        ">Support</h3><li>Customer Support</li>
+        <li>Privacy & Policy</li>
+        <li>Contact Channels</li></div>
+        <div class="about"><h3 style="    position: relative;
+            left: 23px;font-weight:bold;color:white">About</h3><li>Our Story</li>
+        <li>Travel With Us</li>
+        <li>Travel Tips</li>
+        <li>Be Our Partner</li></div>
+        <div class="contact"><h3 style="    position: relative;
+            left: 29px;font-weight:bold;color:white">Contact</h3><li><p>455 West Orchard Street <br>Kings Mountain, NC 280867</p></li>
+        <li><img style="position: relative;top:8px;" src="footer img/icons8-phone-24.png" alt="">+088 (006) 992-99-10</li>
+        <li><img style="    position: relative;
+            top: 13px;
+            width: 33px;
+        " src="footer img/icons8-mail-24.png" alt="">example@gmail.com</li></div>
+        <div class="soc">
+            <li><img src="footer img/icons8-instagram-50.png" alt=""></li>
+            <li><img src="footer img/icons8-pinterest-50.png" alt=""></li>
+            <li><img src="footer img/icons8-twitter-50 (1).png" alt=""></li>
+            <li><img src="footer img/icons8-facebook-50.png" alt=""></li>
+        </div>
+        <div class="fot">
+            <li style="position: relative;right:734px;">© 2023 Ovatheme All Rights Reserved.</li>
+            <li><img src="footer img/icons8-american-express-48.png" alt=""></li>
+            <li><img src="footer img/icons8-jcb-48.png" alt=""></li>
+            <li><img src="footer img/icons8-mastercard-logo-60.png" alt=""></li>
+            <li><img src="footer img/icons8-visa-48.png" alt=""></li>
+        </div>
+
+    </div>
+</body>
+</html>

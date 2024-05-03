@@ -1,0 +1,237 @@
+.lika a{
+    text-decoration: none;
+    color: black;
+}
+.ref:hover{
+    color: red;
+}
+.container-10{
+    height: 475px;
+    width: 1700px;
+    background: linear-gradient(to right, #6edade, #ee1fd1);
+    padding: 10px;
+}
+.slider{
+   
+
+    height: 405px;
+    width: 1700px;
+   
+}
+
+.card{
+    margin: 10px;
+    animation: 40s linear forwards;
+    height: 45px;
+    display: flex;
+    
+}
+.content{
+    height: 110px;
+    background-color: white;
+    border: solid 2px white;
+    padding: 73px;
+    margin: 10px;
+    width: 370px;
+    box-shadow: inset 5px 5px 15px 5px wheat;
+    border-radius: 12px;
+    position: relative;
+    top: 108px;
+
+
+}
+
+.container-10 img{
+    height: 65px;
+    width: 80px;
+    border-radius: 95px;
+    position: relative;
+    bottom: 156px;
+    right: 45px;
+}
+
+.container-10 p{
+    font-size: 17px;
+    color: #666;
+    line-height: 30px;
+    position: relative;
+    bottom: 72px;
+    right: 52px;
+
+}
+
+.container-10 h3{
+    font-weight: bold;
+    position: relative;
+    left: 44px;
+    bottom: 63px;
+}
+
+.container-10 h4{
+    font-weight: lighter;
+    position: relative;
+    left: 44px;
+    bottom: 74px;
+    list-style: none;
+}
+
+.footer{height: 393px;width: 1900px;background: linear-gradient(#0e0a5d,transparent);padding: 10px;}
+.footer li{
+    margin: 25px;
+    color:ghostwhite;
+}
+
+.trip{
+    font-style: italic;
+    position: relative;
+    font-size: 12px;
+    top: 54px;
+    margin: 30px;
+
+}
+.about{
+    font: 10px;
+    position: relative;
+    left: 827px;
+    list-style: none;
+    bottom: 313px;
+}
+
+.support{
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    left: 454px;
+    list-style: none;
+    bottom: 138px;
+}
+
+.contact{
+    list-style: none;
+    position: relative;
+    left: 1149px;
+    bottom: 531px;
+}
+
+.fot{
+    display: flex;
+    position: relative;
+    bottom: 574px;
+    list-style: none;
+    left: 745px;
+
+}
+.soc img{
+    width: 20px;
+    position: relative;
+}
+.soc{
+    display: flex;
+    position: relative;
+    bottom: 614px;
+    list-style: none;
+    left: 12px;
+}
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .scroll {
+    transition: --num 5s;
+    counter-set: num var(--num);
+    font: 800 50px system-ui;
+    color: white;
+    margin: 142px;
+    position: relative;
+    bottom: 93px;
+  }
+  .scroll::after {
+    content: counter(num);
+  }
+  .scroll:hover {
+    --num: 100;
+  }
+
+  .scroll1 {
+    transition: --num 5s;
+    counter-set: num var(--num);
+    font: 800 50px system-ui;
+    color: white;
+    margin: 142px;
+    position: relative;
+    bottom: 93px;
+  }
+
+  .scroll1::after {
+    content: counter(num);
+  }
+  .scroll1:hover {
+    --num: 200;
+  }
+
+  .scroll2 {
+    transition: --num 5s;
+    counter-set: num var(--num);
+    font: 800 50px system-ui;
+    color: white;
+    margin: 142px;
+    position: relative;
+    bottom: 93px;
+  }
+
+
+  .scroll2::after {
+    content: counter(num);
+  }
+  .scroll2:hover {
+    --num: 300;
+  }
+
+  .scroll3 {
+    transition: --num 5s;
+    counter-set: num var(--num);
+    font: 800 50px system-ui;
+    color: white;
+    margin: 142px;
+    position: relative;
+    bottom: 93px;
+  }
+
+
+  .scroll3::after {
+    content: counter(num);
+  }
+  .scroll3:hover {
+    --num: 400;
+  }
+  
+  body {
+    margin: 2rem;
+  }
+
+  .container-16{
+    width: 1750px;
+    height: 400px;
+    background:linear-gradient(black,#ee1fd1);
+    display: flex;
+   
+  }
+  .container-16 img{
+    position: relative;
+    margin: 10px;
+    height: 78px;
+    border-radius: 20px;
+    right: 27px;
+  }
+
+.container-16 h3{
+    position: relative;
+    top: 185px;
+    right: 2px;
+    font-size: 20px;
+  
+    
+}
+
