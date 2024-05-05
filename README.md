@@ -1,1 +1,1 @@
-Explore our captivating tour booking website, seamlessly blending frontend and backend technologies. 
+Explore this captivating tour booking website, seamlessly blending frontend and backend technologies. 
